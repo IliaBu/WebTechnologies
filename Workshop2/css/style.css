@@ -1,0 +1,71 @@
+html,
+body {
+  font-family: 'El Messiri', sans-serif;
+  background-color: #FFEFD5;
+}
+
+h1 {
+  color: rgb(255, 0, 0);
+}
+
+h2 {
+  color: rgb(209, 122, 0);
+}
+
+h2.svoy {
+  color: rgb(0, 148, 10);
+}
+
+.imgContainer {
+  position: relative;
+  width: 70%;
+  height: 800px;
+}
+
+.imgContainer img {
+  position: absolute;
+  width: 100%; 
+  left: 0;
+  right: 0;
+  opacity: 0;
+  animation-name: myImgAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.imgContainer img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.imgContainer img:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.imgContainer img:nth-child(3) {
+  animation-delay: 7s;
+}
+.imgContainer img:nth-child(4) {
+  animation-delay: 10s;
+}
+
+@keyframes myImgAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  12.12% {
+    opacity: 1;
+  }
+
+  35.35% {
+    opacity: 1;
+  }
+
+  45.45% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
