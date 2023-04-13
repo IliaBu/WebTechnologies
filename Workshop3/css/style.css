@@ -1,0 +1,13 @@
+html,
+body {
+  font-family: 'El Messiri', sans-serif;
+  background-color: #FFEFD5;
+}
+
+h1 {
+  color: rgb(7, 0, 99);
+}
+
+p {
+  font-size: 20px;
+}

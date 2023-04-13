@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap"
+    rel="stylesheet" type='text/css'>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Задание 1. Создать страницу, которая спрашивает имя у пользователя и выводит его с помощью функции.</h1>
+    <p id="1"></p>
+    <hr>
+    <script>
+        function getWhatIsYourName() {
+            let name = prompt("Как вас зовут?");
+            alert(`Привет, ${name}`)
+            document.getElementById('1').innerHTML = `Как вас зовут? - ${name}. Привет, ${name}!`;
+        }
+        getWhatIsYourName()
+    </script>
+
+    <h1>Задание 2. Перепишите код, используя конструкцию switch-case, запрашивая возраст пользователя через диалоговое
+        окно.</h1>
+    <p id="2"></p>
+    <hr>
+    <script>
+        function getHowOldIsShe() {
+            let age = prompt("Сколько Вам лет?");
+            switch (age) {
+                case '18':
+                    alert('Вы совершеннолетний!')
+                    break;
+                case '10':
+                    alert('Вам надо учить уроки!')
+                    break;
+                case '30':
+                    alert('Ложитесь спать, завтра на работу')
+                    break;
+                default:
+                    alert('Мы не знаем что Вам делать')
+                    break;
+            }
+            document.getElementById('2').innerHTML = `Сколько Вам лет? - ${age}.`;
+        }
+        getHowOldIsShe();
+    </script>
+</body>
+</html>
