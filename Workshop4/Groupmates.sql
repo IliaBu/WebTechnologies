@@ -1,0 +1,17 @@
+-- create
+CREATE TABLE GROUPMATES (
+id INTEGER PRIMARY KEY,
+name TEXT NOT NULL,
+age TEXT NOT NULL,
+address TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO GROUPMATES VALUES (0001, 'Илья', '33', 'Екатеринбург');
+INSERT INTO GROUPMATES VALUES (0002, 'Юлия', '30', 'Екатеринбург');
+INSERT INTO GROUPMATES VALUES (0003, 'Пётр', '35', 'Москва');
+INSERT INTO GROUPMATES VALUES (0004, 'Игорь', '23', 'Воронеж');
+INSERT INTO GROUPMATES VALUES (0005, 'Николай', '25', 'Тула');
+
+-- fetch 
+SELECT * FROM GROUPMATES;
